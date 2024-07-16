@@ -1,0 +1,76 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    background-color: yellow; /* White background color for html and body */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+.notes-container {
+    background-color: #ffffff; /* Inner background color */
+    border-radius: 8px;
+    overflow: hidden; /* Ensure contents do not overflow */
+    border: 1px solid #ccc;
+    max-width: 800px; /* Limit maximum width of the notes container */
+    width: 100%; /* Full width of the container */
+    padding: 1em; /* Add padding for spacing */
+}
+.notes {
+    display: flex;
+    height: 150%;
+}
+.notes__sidebar {
+    border-right: 1px solid #ccc;
+    flex-shrink: 0;
+    padding: 1em;
+    width: 300px;
+}
+.notes__add {
+    background-color: #009688;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1em;
+    padding: 0.5em 1em;
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+.notes__add:hover {
+    background-color: #00796b;
+}
+
+.notes__list {
+    margin-top: 1em;
+}
+
+.notes__list-item {
+    cursor: pointer;
+    padding: 0.5em;
+    border-radius: 4px;
+}
+
+.notes__list-item:hover {
+    background-color: #f0f0f0;
+}
+
+.notes__preview {
+    flex-grow: 1;
+    padding: 1em;
+}
+
+.notes__title,
+.notes__body {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 0.5em;
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+
+.notes__body {
+    height: 300px; /* Increased height of content box */
+    resize: vertical;
+}
